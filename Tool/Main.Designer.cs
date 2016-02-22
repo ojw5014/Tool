@@ -40,10 +40,9 @@
             // 
             // btnMotionTool
             // 
-            this.btnMotionTool.Location = new System.Drawing.Point(16, 25);
-            this.btnMotionTool.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMotionTool.Location = new System.Drawing.Point(14, 20);
             this.btnMotionTool.Name = "btnMotionTool";
-            this.btnMotionTool.Size = new System.Drawing.Size(305, 74);
+            this.btnMotionTool.Size = new System.Drawing.Size(267, 59);
             this.btnMotionTool.TabIndex = 8;
             this.btnMotionTool.Text = "MotionEditor";
             this.btnMotionTool.UseVisualStyleBackColor = true;
@@ -51,20 +50,20 @@
             // 
             // txtRatio
             // 
-            this.txtRatio.Location = new System.Drawing.Point(250, 23);
+            this.txtRatio.Location = new System.Drawing.Point(219, 18);
             this.txtRatio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRatio.Name = "txtRatio";
-            this.txtRatio.Size = new System.Drawing.Size(71, 25);
+            this.txtRatio.Size = new System.Drawing.Size(63, 21);
             this.txtRatio.TabIndex = 6;
             this.txtRatio.Text = "1.0";
             this.txtRatio.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtRatio_MouseClick);
             // 
             // btn3D_Full
             // 
-            this.btn3D_Full.Location = new System.Drawing.Point(16, 54);
+            this.btn3D_Full.Location = new System.Drawing.Point(14, 43);
             this.btn3D_Full.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn3D_Full.Name = "btn3D_Full";
-            this.btn3D_Full.Size = new System.Drawing.Size(305, 78);
+            this.btn3D_Full.Size = new System.Drawing.Size(267, 62);
             this.btn3D_Full.TabIndex = 4;
             this.btn3D_Full.Text = "3D Modeling Tool(Ratio)";
             this.btn3D_Full.UseVisualStyleBackColor = true;
@@ -73,9 +72,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 26);
+            this.label2.Location = new System.Drawing.Point(11, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 15);
+            this.label2.Size = new System.Drawing.Size(183, 12);
             this.label2.TabIndex = 9;
             this.label2.Text = "Modeling Tool Size(Default:1.0)";
             // 
@@ -84,9 +83,11 @@
             this.groupBox1.Controls.Add(this.btn3D_Full);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtRatio);
-            this.groupBox1.Location = new System.Drawing.Point(19, 12);
+            this.groupBox1.Location = new System.Drawing.Point(17, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 146);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(291, 117);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "3D Modeling Tool";
@@ -94,22 +95,26 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnMotionTool);
-            this.groupBox2.Location = new System.Drawing.Point(19, 163);
+            this.groupBox2.Location = new System.Drawing.Point(17, 130);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(333, 112);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(291, 90);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Motion Tool";
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 293);
+            this.ClientSize = new System.Drawing.Size(327, 234);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

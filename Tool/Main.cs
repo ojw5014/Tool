@@ -35,5 +35,10 @@ namespace Tool
             Ojw.CTools_Motion CTool_Motion = new Ojw.CTools_Motion();
             CTool_Motion.ShowTools();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
