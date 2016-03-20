@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.btnMotionTool = new System.Windows.Forms.Button();
             this.txtRatio = new System.Windows.Forms.TextBox();
             this.btn3D_Full = new System.Windows.Forms.Button();
@@ -111,6 +112,7 @@
             this.ClientSize = new System.Drawing.Size(327, 234);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
             this.Text = "Form1";
