@@ -40,5 +40,13 @@ namespace Tool
         {
 
         }
+
+        private void btnVirtualKeyboard_Click(object sender, EventArgs e)
+        {
+            Ojw.CTools_Keyboard CKeyboard = new Ojw.CTools_Keyboard();
+            CKeyboard.SetCloseEvent(chkApplicationExit.Checked);
+            CKeyboard.SetOpacity(Ojw.CConvert.StrToDouble(txtOpacity.Text)); // 투명도 설정, 1.0 은 뚜렷이 보이는 것
+            CKeyboard.ShowKeyboard();
+        }
     }
 }
