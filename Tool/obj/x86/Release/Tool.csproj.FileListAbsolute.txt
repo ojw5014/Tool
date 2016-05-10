@@ -32,3 +32,8 @@ Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\obj\x86\Release\Tool.csp
 Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\obj\x86\Release\Tool.Main.resources
 Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\obj\x86\Release\Tool.Properties.Resources.resources
 Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\obj\x86\Release\Tool.csproj.GenerateResource.Cache
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.Controls.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.Video.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.Imaging.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.Math.dll

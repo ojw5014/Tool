@@ -36,13 +36,24 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.chkApplicationExit = new System.Windows.Forms.CheckBox();
             this.btnVirtualKeyboard = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtOpacity = new System.Windows.Forms.TextBox();
-            this.chkApplicationExit = new System.Windows.Forms.CheckBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnStartStreaming_Jpeg = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtWidth = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPort = new System.Windows.Forms.TextBox();
+            this.txtIp = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnMotionTool
@@ -117,18 +128,28 @@
             this.groupBox3.Controls.Add(this.btnVirtualKeyboard);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.txtOpacity);
-            this.groupBox3.Location = new System.Drawing.Point(314, 11);
+            this.groupBox3.Location = new System.Drawing.Point(17, 224);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(291, 209);
+            this.groupBox3.Size = new System.Drawing.Size(291, 142);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Virtual Keyboard";
             // 
+            // chkApplicationExit
+            // 
+            this.chkApplicationExit.AutoSize = true;
+            this.chkApplicationExit.Location = new System.Drawing.Point(12, 47);
+            this.chkApplicationExit.Name = "chkApplicationExit";
+            this.chkApplicationExit.Size = new System.Drawing.Size(164, 16);
+            this.chkApplicationExit.TabIndex = 10;
+            this.chkApplicationExit.Text = "종료시 프로그램까지 종료";
+            this.chkApplicationExit.UseVisualStyleBackColor = true;
+            // 
             // btnVirtualKeyboard
             // 
-            this.btnVirtualKeyboard.Location = new System.Drawing.Point(12, 139);
+            this.btnVirtualKeyboard.Location = new System.Drawing.Point(12, 69);
             this.btnVirtualKeyboard.Name = "btnVirtualKeyboard";
             this.btnVirtualKeyboard.Size = new System.Drawing.Size(267, 59);
             this.btnVirtualKeyboard.TabIndex = 8;
@@ -147,7 +168,7 @@
             // 
             // txtOpacity
             // 
-            this.txtOpacity.Location = new System.Drawing.Point(227, 20);
+            this.txtOpacity.Location = new System.Drawing.Point(227, 16);
             this.txtOpacity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOpacity.Name = "txtOpacity";
             this.txtOpacity.Size = new System.Drawing.Size(52, 21);
@@ -155,21 +176,108 @@
             this.txtOpacity.Text = "0.7";
             this.txtOpacity.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtRatio_MouseClick);
             // 
-            // chkApplicationExit
+            // groupBox4
             // 
-            this.chkApplicationExit.AutoSize = true;
-            this.chkApplicationExit.Location = new System.Drawing.Point(12, 60);
-            this.chkApplicationExit.Name = "chkApplicationExit";
-            this.chkApplicationExit.Size = new System.Drawing.Size(164, 16);
-            this.chkApplicationExit.TabIndex = 10;
-            this.chkApplicationExit.Text = "종료시 프로그램까지 종료";
-            this.chkApplicationExit.UseVisualStyleBackColor = true;
+            this.groupBox4.Controls.Add(this.btnStartStreaming_Jpeg);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.txtHeight);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.txtWidth);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.txtPort);
+            this.groupBox4.Controls.Add(this.txtIp);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Location = new System.Drawing.Point(314, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(153, 354);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Video Stream";
+            // 
+            // btnStartStreaming_Jpeg
+            // 
+            this.btnStartStreaming_Jpeg.Location = new System.Drawing.Point(14, 173);
+            this.btnStartStreaming_Jpeg.Name = "btnStartStreaming_Jpeg";
+            this.btnStartStreaming_Jpeg.Size = new System.Drawing.Size(127, 167);
+            this.btnStartStreaming_Jpeg.TabIndex = 17;
+            this.btnStartStreaming_Jpeg.Text = "Streaming Tool";
+            this.btnStartStreaming_Jpeg.UseVisualStyleBackColor = true;
+            this.btnStartStreaming_Jpeg.Click += new System.EventHandler(this.btnStartStreaming_Jpeg_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 12);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "IP";
+            // 
+            // txtHeight
+            // 
+            this.txtHeight.Location = new System.Drawing.Point(54, 133);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(87, 21);
+            this.txtHeight.TabIndex = 15;
+            this.txtHeight.Text = "480";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(27, 12);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Port";
+            // 
+            // txtWidth
+            // 
+            this.txtWidth.Location = new System.Drawing.Point(54, 105);
+            this.txtWidth.Name = "txtWidth";
+            this.txtWidth.Size = new System.Drawing.Size(87, 21);
+            this.txtWidth.TabIndex = 16;
+            this.txtWidth.Text = "640";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 108);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 12);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Width";
+            // 
+            // txtPort
+            // 
+            this.txtPort.Location = new System.Drawing.Point(54, 56);
+            this.txtPort.Name = "txtPort";
+            this.txtPort.Size = new System.Drawing.Size(87, 21);
+            this.txtPort.TabIndex = 14;
+            this.txtPort.Text = "8081";
+            // 
+            // txtIp
+            // 
+            this.txtIp.Location = new System.Drawing.Point(54, 28);
+            this.txtIp.Name = "txtIp";
+            this.txtIp.Size = new System.Drawing.Size(87, 21);
+            this.txtIp.TabIndex = 13;
+            this.txtIp.Text = "192.168.20.6";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 133);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 12);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Height";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 234);
+            this.ClientSize = new System.Drawing.Size(482, 376);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -183,6 +291,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -200,6 +310,16 @@
         private System.Windows.Forms.CheckBox chkApplicationExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtOpacity;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnStartStreaming_Jpeg;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtWidth;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtPort;
+        private System.Windows.Forms.TextBox txtIp;
+        private System.Windows.Forms.Label label6;
     }
 }
 
