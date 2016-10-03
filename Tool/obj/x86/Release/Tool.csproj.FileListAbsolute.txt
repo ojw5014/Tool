@@ -37,3 +37,7 @@ Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.Video
 Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.dll
 Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.Imaging.dll
 Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\AForge.Math.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\IronPython.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\Microsoft.Scripting.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\Microsoft.Dynamic.dll
+Z:\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\bin\Release\Microsoft.Scripting.Metadata.dll

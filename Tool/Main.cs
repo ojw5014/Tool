@@ -131,5 +131,108 @@ namespace Tool
         {
             m_CStream.Stop();
         }
+
+        private Timer m_tmrJoystick = new Timer();
+        private Ojw.CTimer m_CTmr_Joystick = new Ojw.CTimer(); // 조이스틱의 연결을 주기적으로 체크할 타이머
+        private void chkJoystick_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkJoystick.Checked == true)
+            {
+                m_tmrJoystick.Interval = 100;
+                m_btmrJoystick = false;
+                m_tmrJoystick.Tick += new EventHandler(m_tmrJoystick_Tick);
+                m_tmrJoystick.Enabled = true;
+            }
+            else
+            {
+                m_tmrJoystick.Enabled = false;
+                m_btmrJoystick = true;
+                m_tmrJoystick.Tick -= new EventHandler(m_tmrJoystick_Tick);
+            }
+        }
+
+
+        private void FJoystick_Check_Alive()
+        {
+            #region Joystick Check
+
+            Color m_colorLive = Color.LightGreen; // 살았을 경우의 색
+            Color m_colorDead = Color.Gray; // 죽었을 경우의 색
+            if (m_CJoy.IsValid == false)
+            {
+                #region 조이스틱이 연결되지 않았음을 표시
+                if (lbJoystick.ForeColor != m_colorDead)
+                {
+                    lbJoystick.Text = "Joystick (No Connected)";
+                    lbJoystick.ForeColor = m_colorDead;
+                }
+                #endregion 조이스틱이 연결되지 않았음을 표시
+
+                #region 3초마다 다시 재연결을 하려고 시도
+                if (m_CTmr_Joystick.Get() > 3000) // Joystic 이 죽어있다면 체크(3초단위)
+                {
+                    Ojw.CMessage.Write("Joystick Check again");
+                    m_CJoy = new Ojw.CJoystick(Ojw.CJoystick._ID_0);
+
+                    if (m_CJoy.IsValid == false)
+                    {
+                        Ojw.CMessage.Write("But we can't find a joystick device in here. Check your joystick device");
+                        m_CTmr_Joystick.Set(); // 타이머의 카운터를 다시 초기화 한다.
+                    }
+                    else Ojw.CMessage.Write("Joystick is Connected");
+                }
+                #endregion 3초마다 다시 재연결을 하려고 시도
+            }
+            else
+            {
+                #region 연결 되었음을 표시
+                if (lbJoystick.ForeColor != m_colorLive)
+                {
+                    lbJoystick.Text = "Joystick (Connected)";
+                    lbJoystick.ForeColor = m_colorLive;
+                }
+                #endregion 연결 되었음을 표시
+            }
+            #endregion Joystick Check
+        }
+
+        private Ojw.CJoystick m_CJoy = new Ojw.CJoystick(Ojw.CJoystick._ID_0); // 조이스틱 선언
+
+        private bool m_btmrJoystick = false;
+        private void m_tmrJoystick_Tick(object sender, EventArgs e)
+        {
+            if (m_btmrJoystick == true) return;
+            m_btmrJoystick = true;
+
+            // 조이스틱 정보 갱신
+            m_CJoy.Update();
+
+            FJoystick_Check_Alive();
+            FJoystick_Check_Data();
+
+            m_btmrJoystick = false;
+        }
+        private void FJoystick_Check_Data()
+        {
+            #region JoyStick
+            if (m_CJoy.IsValid == true)
+            {
+                #region Button
+                for (int i = 1; i < (int)Enum.GetValues(typeof(Ojw.CJoystick.PadKey)).Length; i++)
+                {
+                    if (m_CJoy.IsDown_Event((Ojw.CJoystick.PadKey)i) == true) Ojw.CMessage.Write(txtEvent, "{0} Button : Clicked", i);
+                }
+                //foreach (Ojw.CJoystick.PadKey i in Enum.GetValues(typeof(Ojw.CJoystick.PadKey)).Length)
+                //{
+                //    if (m_CJoy.IsDown_Event(i) == true) Ojw.CMessage.Write(txtEvent, "{0} Button : Clicked", i);
+                //}                
+                #endregion Button
+
+                #region 조이스틱
+                for (int i = 0; i < 6; i++) ((Label)(this.Controls.Find(String.Format("lbData{0}", i), true)[0])).Text = Ojw.CConvert.DoubleToStr(m_CJoy.GetPos(i));
+                #endregion 조이스틱
+            }
+            #endregion JoyStick
+        }
     }
 }

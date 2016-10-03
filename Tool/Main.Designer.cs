@@ -50,10 +50,27 @@
             this.txtPort = new System.Windows.Forms.TextBox();
             this.txtIp = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.lbJoystick = new System.Windows.Forms.Label();
+            this.grpJoystick = new System.Windows.Forms.GroupBox();
+            this.txtEvent = new System.Windows.Forms.TextBox();
+            this.lbData5 = new System.Windows.Forms.Label();
+            this.lbData4 = new System.Windows.Forms.Label();
+            this.lbData3 = new System.Windows.Forms.Label();
+            this.lbData2 = new System.Windows.Forms.Label();
+            this.lbData1 = new System.Windows.Forms.Label();
+            this.lbData0 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.chkJoystick = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.grpJoystick.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnMotionTool
@@ -272,11 +289,173 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Height";
             // 
+            // lbJoystick
+            // 
+            this.lbJoystick.AutoSize = true;
+            this.lbJoystick.Location = new System.Drawing.Point(705, 25);
+            this.lbJoystick.Name = "lbJoystick";
+            this.lbJoystick.Size = new System.Drawing.Size(146, 12);
+            this.lbJoystick.TabIndex = 15;
+            this.lbJoystick.Text = "Joystick (No Connected)";
+            // 
+            // grpJoystick
+            // 
+            this.grpJoystick.Controls.Add(this.txtEvent);
+            this.grpJoystick.Controls.Add(this.lbData5);
+            this.grpJoystick.Controls.Add(this.lbData4);
+            this.grpJoystick.Controls.Add(this.lbData3);
+            this.grpJoystick.Controls.Add(this.lbData2);
+            this.grpJoystick.Controls.Add(this.lbData1);
+            this.grpJoystick.Controls.Add(this.lbData0);
+            this.grpJoystick.Controls.Add(this.label11);
+            this.grpJoystick.Controls.Add(this.label10);
+            this.grpJoystick.Controls.Add(this.label9);
+            this.grpJoystick.Controls.Add(this.label8);
+            this.grpJoystick.Controls.Add(this.label7);
+            this.grpJoystick.Controls.Add(this.label12);
+            this.grpJoystick.Location = new System.Drawing.Point(473, 40);
+            this.grpJoystick.Name = "grpJoystick";
+            this.grpJoystick.Size = new System.Drawing.Size(389, 326);
+            this.grpJoystick.TabIndex = 14;
+            this.grpJoystick.TabStop = false;
+            this.grpJoystick.Text = "Joystick";
+            // 
+            // txtEvent
+            // 
+            this.txtEvent.Location = new System.Drawing.Point(9, 67);
+            this.txtEvent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEvent.Multiline = true;
+            this.txtEvent.Name = "txtEvent";
+            this.txtEvent.Size = new System.Drawing.Size(369, 245);
+            this.txtEvent.TabIndex = 11;
+            // 
+            // lbData5
+            // 
+            this.lbData5.AutoSize = true;
+            this.lbData5.Location = new System.Drawing.Point(200, 53);
+            this.lbData5.Name = "lbData5";
+            this.lbData5.Size = new System.Drawing.Size(21, 12);
+            this.lbData5.TabIndex = 4;
+            this.lbData5.Text = "0.0";
+            // 
+            // lbData4
+            // 
+            this.lbData4.AutoSize = true;
+            this.lbData4.Location = new System.Drawing.Point(200, 38);
+            this.lbData4.Name = "lbData4";
+            this.lbData4.Size = new System.Drawing.Size(21, 12);
+            this.lbData4.TabIndex = 5;
+            this.lbData4.Text = "0.0";
+            // 
+            // lbData3
+            // 
+            this.lbData3.AutoSize = true;
+            this.lbData3.Location = new System.Drawing.Point(200, 23);
+            this.lbData3.Name = "lbData3";
+            this.lbData3.Size = new System.Drawing.Size(21, 12);
+            this.lbData3.TabIndex = 6;
+            this.lbData3.Text = "0.0";
+            // 
+            // lbData2
+            // 
+            this.lbData2.AutoSize = true;
+            this.lbData2.Location = new System.Drawing.Point(59, 53);
+            this.lbData2.Name = "lbData2";
+            this.lbData2.Size = new System.Drawing.Size(21, 12);
+            this.lbData2.TabIndex = 1;
+            this.lbData2.Text = "0.0";
+            // 
+            // lbData1
+            // 
+            this.lbData1.AutoSize = true;
+            this.lbData1.Location = new System.Drawing.Point(59, 38);
+            this.lbData1.Name = "lbData1";
+            this.lbData1.Size = new System.Drawing.Size(21, 12);
+            this.lbData1.TabIndex = 2;
+            this.lbData1.Text = "0.0";
+            // 
+            // lbData0
+            // 
+            this.lbData0.AutoSize = true;
+            this.lbData0.Location = new System.Drawing.Point(59, 23);
+            this.lbData0.Name = "lbData0";
+            this.lbData0.Size = new System.Drawing.Size(21, 12);
+            this.lbData0.TabIndex = 3;
+            this.lbData0.Text = "0.0";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(148, 53);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 12);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Data5";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(148, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(36, 12);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Data4";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(148, 23);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 12);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Data3";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 53);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(36, 12);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Data2";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 38);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(36, 12);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Data1";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 23);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 12);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Data0";
+            // 
+            // chkJoystick
+            // 
+            this.chkJoystick.AutoSize = true;
+            this.chkJoystick.Location = new System.Drawing.Point(473, 19);
+            this.chkJoystick.Name = "chkJoystick";
+            this.chkJoystick.Size = new System.Drawing.Size(113, 16);
+            this.chkJoystick.TabIndex = 13;
+            this.chkJoystick.Text = "Enable Joystick";
+            this.chkJoystick.UseVisualStyleBackColor = true;
+            this.chkJoystick.CheckedChanged += new System.EventHandler(this.chkJoystick_CheckedChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 376);
+            this.ClientSize = new System.Drawing.Size(878, 378);
+            this.Controls.Add(this.lbJoystick);
+            this.Controls.Add(this.grpJoystick);
+            this.Controls.Add(this.chkJoystick);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -284,7 +463,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Tool";
             this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -293,7 +472,10 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.grpJoystick.ResumeLayout(false);
+            this.grpJoystick.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -320,6 +502,22 @@
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.TextBox txtIp;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbJoystick;
+        private System.Windows.Forms.GroupBox grpJoystick;
+        private System.Windows.Forms.TextBox txtEvent;
+        private System.Windows.Forms.Label lbData5;
+        private System.Windows.Forms.Label lbData4;
+        private System.Windows.Forms.Label lbData3;
+        private System.Windows.Forms.Label lbData2;
+        private System.Windows.Forms.Label lbData1;
+        private System.Windows.Forms.Label lbData0;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.CheckBox chkJoystick;
     }
 }
 
