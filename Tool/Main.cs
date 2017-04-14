@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
+//using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
 using OpenJigWare;
 
-namespace Tool
+namespace Tools
 {
     public partial class Main : Form
     {
@@ -17,23 +17,20 @@ namespace Tool
         {
             InitializeComponent();
         }
-
-        private void txtRatio_MouseClick(object sender, MouseEventArgs e)
+        //private Ojw.CTools m_CTool = new Ojw.CTools();
+        //private Ojw.C3d m_C3d = new Ojw.C3d();
+        private void btn3D_Click(object sender, EventArgs e)
         {
-            Ojw.ShowKeyPad_Number(sender);
+            Ojw.CTools CTool = new Ojw.CTools();
+            CTool.ShowTools_Modeling();
         }
 
         private void btn3D_Full_Click(object sender, EventArgs e)
         {
             Ojw.CTools CTool = new Ojw.CTools();
-            //CTool.ShowTools_Modeling();
+            //CTool.ShowTools_Modeling(0.8f);
             CTool.ShowTools_Modeling(Ojw.CConvert.StrToFloat(txtRatio.Text));
-        }
-
-        private void btnMotionTool_Click(object sender, EventArgs e)
-        {
-            Ojw.CTools_Motion CTool_Motion = new Ojw.CTools_Motion();
-            CTool_Motion.ShowTools();
+            //m_CTool.ShowTools_Modeling(0);
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -41,13 +38,30 @@ namespace Tool
 
         }
 
-        private void btnVirtualKeyboard_Click(object sender, EventArgs e)
+        private void txtRatio_MouseClick(object sender, MouseEventArgs e)
         {
-            Ojw.CTools_Keyboard CKeyboard = new Ojw.CTools_Keyboard();
-            CKeyboard.SetCloseEvent(chkApplicationExit.Checked);
-            CKeyboard.SetOpacity(Ojw.CConvert.StrToDouble(txtOpacity.Text)); // 투명도 설정, 1.0 은 뚜렷이 보이는 것
-            CKeyboard.ShowKeyboard();
+            Ojw.ShowKeyPad_Number(sender);
         }
+
+        private void txtTest_MouseClick(object sender, MouseEventArgs e)
+        {
+            Ojw.ShowKeyPad_Alpha(sender);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ojw.CTools_Motion CTool_Motion = new Ojw.CTools_Motion();
+            CTool_Motion.ShowTools(Ojw.CConvert.StrToFloat(txtRatio.Text));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Ojw.CTools_Keyboard CTool_Keyboard = new Ojw.CTools_Keyboard();
+            //CTool_Keyboard.ShowKeyboard();
+            CTool_Keyboard.SetOpacity(0.7);
+            CTool_Keyboard.ShowKeyboard(100, 100);
+        }
+
 
 
         private Ojw.CStream m_CStream = new Ojw.CStream();
@@ -78,7 +92,7 @@ namespace Tool
             btnStart.Top = nGap * 2 + lbDisp.Height;
             btnStart.Height = frmDisp.Height - nSize_Winddow_Height - btnStart.Top - nGap;
             btnStart.Width = (nW / 3 - nGap + nGap / 3);
-            btnStart.Text = "Start(MJpeg)";
+            btnStart.Text = "Start(Jpeg)";
             btnStart.Click += new EventHandler(btnStart_Click);
             frmDisp.Controls.Add(btnStart);
 
@@ -87,10 +101,10 @@ namespace Tool
             btnStart2.Top = nGap * 2 + lbDisp.Height;
             btnStart2.Height = frmDisp.Height - nSize_Winddow_Height - btnStart2.Top - nGap;
             btnStart2.Width = btnStart.Width;
-            btnStart2.Text = "Start(Jpeg)";
+            btnStart2.Text = "Start(MJpeg)";
             btnStart2.Click += new EventHandler(btnStart2_Click);
             frmDisp.Controls.Add(btnStart2);
-
+            
             Button btnStop = new Button();
             btnStop.Left = btnStart2.Right + nGap;
             btnStop.Top = nGap * 2 + lbDisp.Height;
@@ -100,8 +114,9 @@ namespace Tool
             btnStop.Click += new EventHandler(btnStop_Click);
             frmDisp.Controls.Add(btnStop);
             frmDisp.FormClosing += new FormClosingEventHandler(frmDisp_FormClosing);
-            frmDisp.Show();   
+            frmDisp.Show();            
         }
+
         void frmDisp_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (m_CStream.IsStreaming == true) m_CStream.Stop();
@@ -115,7 +130,7 @@ namespace Tool
             int nY = 0;
             int nWidth = Ojw.CConvert.StrToInt(txtWidth.Text);
             int nHeight = Ojw.CConvert.StrToInt(txtHeight.Text);
-            m_CStream.Start_MJpeg(m_lbDisp, strIp, nPort, nX, nY, nWidth, nHeight);
+            m_CStream.Start_Jpeg(m_lbDisp, strIp, nPort, nX, nY, nWidth, nHeight);
         }
         void btnStart2_Click(object sender, EventArgs e)
         {
@@ -125,11 +140,19 @@ namespace Tool
             int nY = 0;
             int nWidth = Ojw.CConvert.StrToInt(txtWidth.Text);
             int nHeight = Ojw.CConvert.StrToInt(txtHeight.Text);
-            m_CStream.Start_Jpeg(m_lbDisp, strIp, nPort, nX, nY, nWidth, nHeight);
+            m_CStream.Start_MJpeg(m_lbDisp, strIp, nPort, nX, nY, nWidth, nHeight);
         }
         void btnStop_Click(object sender, EventArgs e)
         {
             m_CStream.Stop();
+        }
+
+        private void btnStartStreaming_MJpeg_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnStopStreaming_Click(object sender, EventArgs e)
+        {
         }
 
         private Timer m_tmrJoystick = new Timer();
@@ -150,8 +173,6 @@ namespace Tool
                 m_tmrJoystick.Tick -= new EventHandler(m_tmrJoystick_Tick);
             }
         }
-
-
         private void FJoystick_Check_Alive()
         {
             #region Joystick Check
@@ -203,7 +224,7 @@ namespace Tool
         {
             if (m_btmrJoystick == true) return;
             m_btmrJoystick = true;
-
+            
             // 조이스틱 정보 갱신
             m_CJoy.Update();
 
@@ -233,6 +254,71 @@ namespace Tool
                 #endregion 조이스틱
             }
             #endregion JoyStick
+        }
+
+        private Ojw.CStream_Server m_CStreamServer = new Ojw.CStream_Server();
+        private void btnStreamServer_Start_Click(object sender, EventArgs e)
+        {
+            m_CStreamServer.Start(Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text));
+        }
+
+        private void btnStreamServer_Stop_Click(object sender, EventArgs e)
+        {
+            m_CStreamServer.Stop();
+        }
+
+        private void btnStreamClient_Start_Click(object sender, EventArgs e)
+        {
+            int nW = Ojw.CConvert.StrToInt(txtStreamingServer_Width.Text);
+            int nH = Ojw.CConvert.StrToInt(txtStreamingServer_Height.Text);
+            string strIp = "localhost";
+            string strPort = txtStreamingServer_Port.Text;
+            Ojw.CInputBox.Show("Ip Address", "Put your Server Ip Address", ref strIp);
+            Ojw.CInputBox.Show("Port", "Put your Server Port", ref strPort);
+            m_CStream.Start_MJpeg(picDisp, String.Format("http://{0}:{1}", strIp, strPort), nW, nH);
+        }
+
+        private void btnStreamClient_Stop_Click(object sender, EventArgs e)
+        {
+            m_CStream.Stop();
+        }
+
+        private void btnStreamServer_Start_Camera_Click(object sender, EventArgs e)
+        {
+            m_CStreamServer.Start(Ojw.CConvert.StrToInt(txtCameraIndex.Text), Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text));
+        }
+
+        private Ojw.CCamera m_CCam = new Ojw.CCamera();
+        private void btnCamera_Start_Click(object sender, EventArgs e)
+        {
+            m_CCam.Init(lbCamera, Ojw.CConvert.StrToInt(txtCameraIndex.Text));
+            m_CCam.Start();
+        }
+
+        private void btnCamera_Stop_Click(object sender, EventArgs e)
+        {
+            m_CCam.Stop();
+        }
+
+        private void btnStreamServer_Start_Camera2_Click(object sender, EventArgs e)
+        {
+            m_CStreamServer.Start(lbCamera, Ojw.CConvert.StrToInt(txtCameraIndex.Text), Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text));
+        }
+
+        private void rdJoystick0_CheckedChanged(object sender, EventArgs e)
+        {
+            m_CJoy = new Ojw.CJoystick((rdJoystick0.Checked == true) ? Ojw.CJoystick._ID_0 : Ojw.CJoystick._ID_1); // 조이스틱 선언
+        }
+
+        private void rdJoystick1_CheckedChanged(object sender, EventArgs e)
+        {
+            m_CJoy = new Ojw.CJoystick((rdJoystick0.Checked == true) ? Ojw.CJoystick._ID_0 : Ojw.CJoystick._ID_1); // 조이스틱 선언
+        }
+
+        private void btnVoice_Click(object sender, EventArgs e)
+        {
+            Ojw.CTools_Speech CTool = new Ojw.CTools_Speech();
+            CTool.Show();
         }
     }
 }
