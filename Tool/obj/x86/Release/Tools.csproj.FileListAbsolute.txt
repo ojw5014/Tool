@@ -199,3 +199,34 @@ C:\Users\Ojw-Hasee\Desktop\새 폴더\OpenJigWare\Tools\Tools\obj\x86\Release\To
 C:\Users\Ojw-Hasee\Desktop\새 폴더\OpenJigWare\Tools\Tools\obj\x86\Release\Tools.Main.resources
 C:\Users\Ojw-Hasee\Desktop\새 폴더\OpenJigWare\Tools\Tools\obj\x86\Release\Tools.Properties.Resources.resources
 C:\Users\Ojw-Hasee\Desktop\새 폴더\OpenJigWare\Tools\Tools\obj\x86\Release\Tools.csproj.GenerateResource.Cache
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Tools.exe.config
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\obj\x86\Release\Tools.exe
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\obj\x86\Release\Tools.pdb
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Tools.exe
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Tools.pdb
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Microsoft.Contracts.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\MyoSharp.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\OpenJigWare.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Tao.FreeGlut.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Tao.Ode.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Tao.OpenGl.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Tao.Platform.Windows.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\LeapCSharp.NET4.0.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\AForge.Controls.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\AForge.Video.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Interop.SKYPE4COMLib.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Microsoft.Speech.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\AxInterop.WMPLib.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\AForge.Video.DirectShow.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\AForge.Imaging.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\IronPython.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Microsoft.Scripting.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Interop.WMPLib.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\AForge.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\AForge.Math.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Microsoft.Dynamic.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\bin\Release\Microsoft.Scripting.Metadata.dll
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\obj\x86\Release\Tools.csprojResolveAssemblyReference.cache
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\obj\x86\Release\Tools.Main.resources
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\obj\x86\Release\Tools.Properties.Resources.resources
+Z:\ojw5014\17.Github전송용\GitHub\OpenJigWare\Tool\Tool\Tool\Tool\obj\x86\Release\Tools.csproj.GenerateResource.Cache
