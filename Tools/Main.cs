@@ -26,6 +26,7 @@ namespace Tools
             CTool_Designer.ShowTools(1.0f);
             //Ojw.CTools CTool = new Ojw.CTools();
             //CTool.ShowTools_Modeling();
+            //this.Hide();
         }
 
         private void btn3D_Full_Click(object sender, EventArgs e)
@@ -62,7 +63,7 @@ namespace Tools
             Ojw.CTools_Keyboard CTool_Keyboard = new Ojw.CTools_Keyboard();
             //CTool_Keyboard.ShowKeyboard();
             CTool_Keyboard.SetOpacity(0.7);
-            CTool_Keyboard.ShowKeyboard(100, 100);
+            CTool_Keyboard.ShowKeyboard(0, 0);
         }
 
 
@@ -263,7 +264,16 @@ namespace Tools
         private Ojw.CStream_Server m_CStreamServer = new Ojw.CStream_Server();
         private void btnStreamServer_Start_Click(object sender, EventArgs e)
         {
-            m_CStreamServer.Start(Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text));
+            int nLeft = Ojw.CConvert.StrToInt(txtCutting_Left.Text);
+            int nTop = Ojw.CConvert.StrToInt(txtCutting_Top.Text);
+            int nWidth = Ojw.CConvert.StrToInt(txtCutting_Width.Text);
+            int nHeight = Ojw.CConvert.StrToInt(txtCutting_Height.Text);
+            m_CStreamServer.Cutting(chkCutting.Checked, nLeft, nTop, nWidth, nHeight);
+
+            m_CStreamServer.Start(Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text), 
+                Ojw.CConvert.StrToInt(txtStreamingServer_Width.Text),
+                Ojw.CConvert.StrToInt(txtStreamingServer_Height.Text)
+                );
         }
 
         private void btnStreamServer_Stop_Click(object sender, EventArgs e)
@@ -289,13 +299,21 @@ namespace Tools
 
         private void btnStreamServer_Start_Camera_Click(object sender, EventArgs e)
         {
-            m_CStreamServer.Start(Ojw.CConvert.StrToInt(txtCameraIndex.Text), Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text));
+            int nLeft = Ojw.CConvert.StrToInt(txtCutting_Left.Text);
+            int nTop = Ojw.CConvert.StrToInt(txtCutting_Top.Text);
+            int nWidth = Ojw.CConvert.StrToInt(txtCutting_Width.Text);
+            int nHeight = Ojw.CConvert.StrToInt(txtCutting_Height.Text);
+            m_CStreamServer.Cutting(chkCutting.Checked, nLeft, nTop, nWidth, nHeight);
+            m_CStreamServer.Start(Ojw.CConvert.StrToInt(txtCameraIndex.Text), Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text), Ojw.CConvert.StrToInt(txtCam_Width.Text), Ojw.CConvert.StrToInt(txtCam_Height.Text));
         }
 
         private Ojw.CCamera m_CCam = new Ojw.CCamera();
         private void btnCamera_Start_Click(object sender, EventArgs e)
         {
-            m_CCam.Init(lbCamera, Ojw.CConvert.StrToInt(txtCameraIndex.Text));
+            m_CCam.Init(lbCamera, Ojw.CConvert.StrToInt(txtCameraIndex.Text),
+                Ojw.CConvert.StrToInt(txtStreamingServer_Width.Text), 
+                Ojw.CConvert.StrToInt(txtStreamingServer_Height.Text)
+                );
             m_CCam.Start();
         }
 
@@ -306,6 +324,12 @@ namespace Tools
 
         private void btnStreamServer_Start_Camera2_Click(object sender, EventArgs e)
         {
+            int nLeft = Ojw.CConvert.StrToInt(txtCutting_Left.Text);
+            int nTop = Ojw.CConvert.StrToInt(txtCutting_Top.Text);
+            int nWidth = Ojw.CConvert.StrToInt(txtCutting_Width.Text);
+            int nHeight = Ojw.CConvert.StrToInt(txtCutting_Height.Text);
+            m_CStreamServer.Cutting(chkCutting.Checked, nLeft, nTop, nWidth, nHeight);
+
             m_CStreamServer.Start(lbCamera, Ojw.CConvert.StrToInt(txtCameraIndex.Text), Ojw.CConvert.StrToInt(txtStreamingServer_Port.Text));
         }
 
@@ -344,6 +368,20 @@ namespace Tools
             //    //Ojw.CSystem.ScreenKeyboard2(false);
             //}
             
+        }
+
+        private void btnShutdown_Click(object sender, EventArgs e)
+        {
+            Ojw.CSystem.ShutDown(3);
+        }
+
+        private void chkCutting_CheckedChanged(object sender, EventArgs e)
+        {
+            int nLeft = Ojw.CConvert.StrToInt(txtCutting_Left.Text);
+            int nTop = Ojw.CConvert.StrToInt(txtCutting_Top.Text);
+            int nWidth = Ojw.CConvert.StrToInt(txtCutting_Width.Text);
+            int nHeight = Ojw.CConvert.StrToInt(txtCutting_Height.Text);
+            m_CStreamServer.Cutting(chkCutting.Checked, nLeft, nTop, nWidth, nHeight);
         }
     }
 }

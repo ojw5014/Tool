@@ -37,7 +37,6 @@ D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\AForge.Controls.dll
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\AForge.Video.dll
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\Interop.SKYPE4COMLib.dll
-D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\Microsoft.Speech.dll
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\LeapCSharp.NET3.5.dll
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\AxInterop.WMPLib.dll
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\AForge.Video.DirectShow.dll
@@ -50,34 +49,35 @@ D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\obj\x86\D
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.csproj.GenerateResource.Cache
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.exe
 D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.pdb
-Z:\guest\tutorial\Tools\Tools\obj\x86\Debug\Tools.csprojAssemblyReference.cache
-Z:\guest\tutorial\Tools\Tools\obj\x86\Debug\Tools.Main.resources
-Z:\guest\tutorial\Tools\Tools\obj\x86\Debug\Tools.Properties.Resources.resources
-Z:\guest\tutorial\Tools\Tools\obj\x86\Debug\Tools.csproj.GenerateResource.cache
-Z:\guest\tutorial\Tools\Tools\obj\x86\Debug\Tools.exe
-Z:\guest\tutorial\Tools\Tools\obj\x86\Debug\Tools.pdb
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Tools.exe.config
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Tools.exe
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Tools.pdb
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Microsoft.Contracts.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\MyoSharp.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\OpenJigWare.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Tao.FreeGlut.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Tao.Ode.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Tao.OpenGl.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Tao.Platform.Windows.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\AForge.Controls.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\AForge.Video.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Interop.SKYPE4COMLib.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Microsoft.Speech.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\LeapCSharp.NET3.5.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\AxInterop.WMPLib.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\AForge.Video.DirectShow.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\AForge.Imaging.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\IronPython.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Microsoft.Scripting.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Interop.WMPLib.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\AForge.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Microsoft.Dynamic.dll
-Z:\guest\tutorial\Tools\Tools\bin\Debug\Microsoft.Scripting.Metadata.dll
-Z:\guest\tutorial\Tools\Tools\obj\x86\Debug\Tools.csproj.CopyComplete
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\IronPython.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\Microsoft.Scripting.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\Microsoft.Dynamic.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\OpenJigWare\Tools\Tools\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tools.exe.config
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tools.exe
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tools.pdb
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Microsoft.Contracts.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\MyoSharp.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\OpenJigWare.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tao.FreeGlut.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tao.Ode.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tao.OpenGl.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tao.Platform.Windows.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\AForge.Controls.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\LeapCSharp.NET3.5.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Interop.SKYPE4COMLib.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\AForge.Video.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\AxInterop.WMPLib.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\AForge.Video.DirectShow.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\AForge.Imaging.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Interop.WMPLib.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\AForge.dll
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.Main.resources
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.Properties.Resources.resources
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.csproj.GenerateResource.Cache
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.exe
+D:\Bin\C#\GitHub\for Me(In Secret)\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.pdb
+D:\Bin\cs\OpenJigWare\trunk\OpenJigWare\Tools\Tools\bin\Debug\Tools.exe.config
+D:\Bin\cs\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.exe
+D:\Bin\cs\OpenJigWare\trunk\OpenJigWare\Tools\Tools\obj\x86\Debug\Tools.pdb
