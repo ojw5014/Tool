@@ -383,5 +383,18 @@ namespace Tools
             int nHeight = Ojw.CConvert.StrToInt(txtCutting_Height.Text);
             m_CStreamServer.Cutting(chkCutting.Checked, nLeft, nTop, nWidth, nHeight);
         }
+
+        private void btnVideoFile_Start_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Multiselect = false;
+            if (dlg.ShowDialog() != DialogResult.OK) return;
+            string strFileName = dlg.FileName;
+            m_CCam.Init(lbCamera, strFileName,
+                Ojw.CConvert.StrToInt(txtStreamingServer_Width.Text),
+                Ojw.CConvert.StrToInt(txtStreamingServer_Height.Text)
+                );
+            m_CCam.Start();
+        }
     }
 }

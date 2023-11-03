@@ -77,38 +77,39 @@
             this.txtStreamingServer_Width = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtStreamingServer_Port = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.chkCutting = new System.Windows.Forms.CheckBox();
+            this.txtCutting_Top = new System.Windows.Forms.TextBox();
+            this.txtCutting_Height = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtCutting_Left = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtCutting_Width = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.btnCamera_Start = new System.Windows.Forms.Button();
             this.btnCamera_Stop = new System.Windows.Forms.Button();
             this.lbCamera = new System.Windows.Forms.Label();
             this.txtCameraIndex = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtCam_Height = new System.Windows.Forms.TextBox();
+            this.txtCam_Width = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.picDisp = new System.Windows.Forms.PictureBox();
             this.btnVoice = new System.Windows.Forms.Button();
             this.btnKeyboard_Global = new System.Windows.Forms.Button();
             this.btnShutdown = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtCam_Width = new System.Windows.Forms.TextBox();
-            this.txtCam_Height = new System.Windows.Forms.TextBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtCutting_Width = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtCutting_Height = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtCutting_Left = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtCutting_Top = new System.Windows.Forms.TextBox();
-            this.chkCutting = new System.Windows.Forms.CheckBox();
+            this.btnVideoFile_Start = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.grpJoystick.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDisp)).BeginInit();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn3D
@@ -618,6 +619,107 @@
             this.txtStreamingServer_Port.TabIndex = 7;
             this.txtStreamingServer_Port.Text = "8081";
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.chkCutting);
+            this.groupBox5.Controls.Add(this.txtCutting_Top);
+            this.groupBox5.Controls.Add(this.txtCutting_Height);
+            this.groupBox5.Controls.Add(this.label21);
+            this.groupBox5.Controls.Add(this.txtCutting_Left);
+            this.groupBox5.Controls.Add(this.label18);
+            this.groupBox5.Controls.Add(this.label20);
+            this.groupBox5.Controls.Add(this.txtCutting_Width);
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Location = new System.Drawing.Point(6, 43);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(310, 68);
+            this.groupBox5.TabIndex = 10;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "cutting";
+            // 
+            // chkCutting
+            // 
+            this.chkCutting.AutoSize = true;
+            this.chkCutting.Location = new System.Drawing.Point(12, 24);
+            this.chkCutting.Name = "chkCutting";
+            this.chkCutting.Size = new System.Drawing.Size(46, 19);
+            this.chkCutting.TabIndex = 8;
+            this.chkCutting.Text = "En";
+            this.chkCutting.UseVisualStyleBackColor = true;
+            this.chkCutting.CheckedChanged += new System.EventHandler(this.chkCutting_CheckedChanged);
+            // 
+            // txtCutting_Top
+            // 
+            this.txtCutting_Top.Location = new System.Drawing.Point(161, 40);
+            this.txtCutting_Top.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCutting_Top.Name = "txtCutting_Top";
+            this.txtCutting_Top.Size = new System.Drawing.Size(45, 25);
+            this.txtCutting_Top.TabIndex = 7;
+            this.txtCutting_Top.Text = "0";
+            // 
+            // txtCutting_Height
+            // 
+            this.txtCutting_Height.Location = new System.Drawing.Point(261, 40);
+            this.txtCutting_Height.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCutting_Height.Name = "txtCutting_Height";
+            this.txtCutting_Height.Size = new System.Drawing.Size(45, 25);
+            this.txtCutting_Height.TabIndex = 7;
+            this.txtCutting_Height.Text = "480";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(65, 22);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(93, 15);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Left(-1:auto)";
+            // 
+            // txtCutting_Left
+            // 
+            this.txtCutting_Left.Location = new System.Drawing.Point(160, 17);
+            this.txtCutting_Left.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCutting_Left.Name = "txtCutting_Left";
+            this.txtCutting_Left.Size = new System.Drawing.Size(45, 25);
+            this.txtCutting_Left.TabIndex = 7;
+            this.txtCutting_Left.Text = "0";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(216, 21);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(44, 15);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "Width";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(61, 45);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(94, 15);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "Top(-1:auto)";
+            // 
+            // txtCutting_Width
+            // 
+            this.txtCutting_Width.Location = new System.Drawing.Point(260, 17);
+            this.txtCutting_Width.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCutting_Width.Name = "txtCutting_Width";
+            this.txtCutting_Width.Size = new System.Drawing.Size(45, 25);
+            this.txtCutting_Width.TabIndex = 7;
+            this.txtCutting_Width.Text = "640";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(212, 44);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(48, 15);
+            this.label19.TabIndex = 6;
+            this.label19.Text = "Height";
+            // 
             // btnCamera_Start
             // 
             this.btnCamera_Start.Location = new System.Drawing.Point(258, 322);
@@ -676,6 +778,7 @@
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.txtCam_Width);
             this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.btnVideoFile_Start);
             this.groupBox3.Controls.Add(this.btnCamera_Start);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Location = new System.Drawing.Point(411, 198);
@@ -686,6 +789,42 @@
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Camera Device(Webcam)";
+            // 
+            // txtCam_Height
+            // 
+            this.txtCam_Height.Location = new System.Drawing.Point(136, 354);
+            this.txtCam_Height.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCam_Height.Name = "txtCam_Height";
+            this.txtCam_Height.Size = new System.Drawing.Size(46, 25);
+            this.txtCam_Height.TabIndex = 7;
+            this.txtCam_Height.Text = "480";
+            // 
+            // txtCam_Width
+            // 
+            this.txtCam_Width.Location = new System.Drawing.Point(136, 325);
+            this.txtCam_Width.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCam_Width.Name = "txtCam_Width";
+            this.txtCam_Width.Size = new System.Drawing.Size(46, 25);
+            this.txtCam_Width.TabIndex = 7;
+            this.txtCam_Width.Text = "640";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(88, 330);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(44, 15);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Width";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(88, 359);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 15);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "Height";
             // 
             // groupBox4
             // 
@@ -743,142 +882,16 @@
             this.btnShutdown.UseVisualStyleBackColor = true;
             this.btnShutdown.Click += new System.EventHandler(this.btnShutdown_Click);
             // 
-            // label16
+            // btnVideoFile_Start
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(138, 358);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 15);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Height";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(138, 329);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(44, 15);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Width";
-            // 
-            // txtCam_Width
-            // 
-            this.txtCam_Width.Location = new System.Drawing.Point(186, 324);
-            this.txtCam_Width.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCam_Width.Name = "txtCam_Width";
-            this.txtCam_Width.Size = new System.Drawing.Size(46, 25);
-            this.txtCam_Width.TabIndex = 7;
-            this.txtCam_Width.Text = "640";
-            // 
-            // txtCam_Height
-            // 
-            this.txtCam_Height.Location = new System.Drawing.Point(186, 353);
-            this.txtCam_Height.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCam_Height.Name = "txtCam_Height";
-            this.txtCam_Height.Size = new System.Drawing.Size(46, 25);
-            this.txtCam_Height.TabIndex = 7;
-            this.txtCam_Height.Text = "480";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.chkCutting);
-            this.groupBox5.Controls.Add(this.txtCutting_Top);
-            this.groupBox5.Controls.Add(this.txtCutting_Height);
-            this.groupBox5.Controls.Add(this.label21);
-            this.groupBox5.Controls.Add(this.txtCutting_Left);
-            this.groupBox5.Controls.Add(this.label18);
-            this.groupBox5.Controls.Add(this.label20);
-            this.groupBox5.Controls.Add(this.txtCutting_Width);
-            this.groupBox5.Controls.Add(this.label19);
-            this.groupBox5.Location = new System.Drawing.Point(6, 43);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(310, 68);
-            this.groupBox5.TabIndex = 10;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "cutting";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(216, 21);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(44, 15);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Width";
-            // 
-            // txtCutting_Width
-            // 
-            this.txtCutting_Width.Location = new System.Drawing.Point(260, 17);
-            this.txtCutting_Width.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCutting_Width.Name = "txtCutting_Width";
-            this.txtCutting_Width.Size = new System.Drawing.Size(45, 25);
-            this.txtCutting_Width.TabIndex = 7;
-            this.txtCutting_Width.Text = "640";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(212, 44);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(48, 15);
-            this.label19.TabIndex = 6;
-            this.label19.Text = "Height";
-            // 
-            // txtCutting_Height
-            // 
-            this.txtCutting_Height.Location = new System.Drawing.Point(261, 40);
-            this.txtCutting_Height.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCutting_Height.Name = "txtCutting_Height";
-            this.txtCutting_Height.Size = new System.Drawing.Size(45, 25);
-            this.txtCutting_Height.TabIndex = 7;
-            this.txtCutting_Height.Text = "480";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(61, 45);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(94, 15);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Top(-1:auto)";
-            // 
-            // txtCutting_Left
-            // 
-            this.txtCutting_Left.Location = new System.Drawing.Point(160, 17);
-            this.txtCutting_Left.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCutting_Left.Name = "txtCutting_Left";
-            this.txtCutting_Left.Size = new System.Drawing.Size(45, 25);
-            this.txtCutting_Left.TabIndex = 7;
-            this.txtCutting_Left.Text = "0";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(65, 22);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(93, 15);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Left(-1:auto)";
-            // 
-            // txtCutting_Top
-            // 
-            this.txtCutting_Top.Location = new System.Drawing.Point(161, 40);
-            this.txtCutting_Top.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCutting_Top.Name = "txtCutting_Top";
-            this.txtCutting_Top.Size = new System.Drawing.Size(45, 25);
-            this.txtCutting_Top.TabIndex = 7;
-            this.txtCutting_Top.Text = "0";
-            // 
-            // chkCutting
-            // 
-            this.chkCutting.AutoSize = true;
-            this.chkCutting.Location = new System.Drawing.Point(12, 24);
-            this.chkCutting.Name = "chkCutting";
-            this.chkCutting.Size = new System.Drawing.Size(46, 19);
-            this.chkCutting.TabIndex = 8;
-            this.chkCutting.Text = "En";
-            this.chkCutting.UseVisualStyleBackColor = true;
-            this.chkCutting.CheckedChanged += new System.EventHandler(this.chkCutting_CheckedChanged);
+            this.btnVideoFile_Start.Location = new System.Drawing.Point(188, 322);
+            this.btnVideoFile_Start.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnVideoFile_Start.Name = "btnVideoFile_Start";
+            this.btnVideoFile_Start.Size = new System.Drawing.Size(64, 29);
+            this.btnVideoFile_Start.TabIndex = 14;
+            this.btnVideoFile_Start.Text = "Start(Video)";
+            this.btnVideoFile_Start.UseVisualStyleBackColor = true;
+            this.btnVideoFile_Start.Click += new System.EventHandler(this.btnVideoFile_Start_Click);
             // 
             // Main
             // 
@@ -913,12 +926,12 @@
             this.grpJoystick.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picDisp)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -999,6 +1012,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtCutting_Width;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button btnVideoFile_Start;
     }
 }
 
